@@ -1,0 +1,10 @@
+CREATE TABLE admins(
+	id INT(11) NOT NULL AUTO_INCREMENT,
+    firstname VARCHAR(30) NOT NULL,
+    surname VARCHAR(30) NOT NULL,
+    username VARCHAR(30) NOT NULL,
+    pwd VARCHAR(255) NOT NULL,
+    admidcodec VARCHAR(6) NOT NULL DEFAULT 'A$h72Z',
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIME,
+    PRIMARY KEY (id)
+);
